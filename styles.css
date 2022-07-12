@@ -1,0 +1,88 @@
+:root{
+    --color-primary:#d95550;
+    --color-light:#dd6662;
+    --color-verylight:#f89e8b;
+    --color-gray:#55557b;
+    --color-white:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-primary);
+    accent-color: var(--color-light);
+}
+
+h1{
+    margin-top: 200px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+
+form input[type="text"]{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-style:none ;
+    font-size: 1.5em;
+}
+form input[type="text"]::placeholder{
+    color: var(--color-verylight);
+}
+form input[type="text"]:focus{
+    outline: none;
+}
+
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--color-primary);
+}
+form input[type="submit"]:hover{
+    background-color: var(--color-verylight);
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.list-container{
+    width: 400px;
+    margin-top: 30px;
+}
+.task-container{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    margin: 6px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--color-gray);
+    border-radius: 5px;
+}
+.closeBtn{
+    margin-top: 2px;
+    width: 23px;
+    height: 23px;
+}
+.closeBtn:hover{
+    cursor: pointer;
+}
+#stats{
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--color-verylight);
+    text-align: center;
+}

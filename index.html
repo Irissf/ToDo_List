@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>To do List</h1>
+
+    <form action="#" id="userInput">
+
+        <input type="text" placeholder="Escribe tu tarea aqui..." autofocus>
+        <input type="submit" value="+" id="addBtn">
+
+        <div class="list-container" id="list">
+
+            <!-- Estructura de una tarea -->
+            <div class="task-container" id="1">
+                <label for="">
+                    <input type="checkbox">
+                    Tarea 1
+                </label>
+                <img src="./images/papelera.png" class="closeBtn">
+            </div>
+
+        </div>
+
+        <div id="stats">
+            Tareas pendientes: 5 Completadas: 3
+        </div>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
